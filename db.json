@@ -44,6 +44,36 @@
       "date": "2019-02-02T23:27:00.000Z",
       "time": "1:00",
       "attendees": []
+    },
+    {
+      "id": 289576,
+      "user": {
+        "id": "abc123",
+        "name": "Matt Silva"
+      },
+      "category": "c",
+      "organizer": "Matt Silva",
+      "title": "a",
+      "description": "aa",
+      "location": "a",
+      "date": "2020-01-02T15:20:00.000Z",
+      "time": "7:00",
+      "attendees": []
+    },
+    {
+      "id": 565260,
+      "user": {
+        "id": "abc123",
+        "name": "Matt Silva"
+      },
+      "category": "b",
+      "organizer": "Matt Silva",
+      "title": "t",
+      "description": "d",
+      "location": "l",
+      "date": "",
+      "time": "",
+      "attendees": []
     }
   ]
 }
