@@ -194,6 +194,51 @@
       "date": "",
       "time": "",
       "attendees": []
+    },
+    {
+      "id": 486303,
+      "user": {
+        "id": "abc123",
+        "name": "Matt"
+      },
+      "category": "b",
+      "organizer": "Matt",
+      "title": "TEST",
+      "description": "DESC",
+      "location": "LOC",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 436135,
+      "user": {
+        "id": "abc123",
+        "name": "Matt"
+      },
+      "category": "c",
+      "organizer": "Matt",
+      "title": "a",
+      "description": "aa",
+      "location": "a",
+      "date": "2020-01-03T18:38:00.000Z",
+      "time": "3:00",
+      "attendees": []
+    },
+    {
+      "id": 421602,
+      "user": {
+        "id": "abc123",
+        "name": "Matt"
+      },
+      "category": "",
+      "organizer": "Matt",
+      "title": "",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
     }
   ]
 }

@@ -3,7 +3,8 @@ import EventService from "@/services/EventService.js";
 export const state = {
   events: [],
   eventsTotal: Number,
-  event: {}
+  event: {},
+  perPage: 3
 };
 
 export const getters = {
@@ -38,8 +39,8 @@ export const actions = {
     });
   },
 
-  fetchEvents({ commit }, { perPage, page }) {
-    EventService.getEvents(perPage, page)
+  fetchEvents({ commit, state }, { page }) {
+    return EventService.getEvents(state.perPage, page)
       .then(res => {
         commit("SET_EVENTTOTAL", res.headers["x-total-count"]);
         commit("SET_EVENTS", res.data);
@@ -51,10 +52,12 @@ export const actions = {
 
     if (event) {
       commit("SET_EVENT", event);
+      return event;
     } else {
-      EventService.getEvent(id)
+      return EventService.getEvent(id)
         .then(res => {
           commit("SET_EVENT", res.data);
+          return res.data;
         })
         .catch(error => console.log(error));
     }
