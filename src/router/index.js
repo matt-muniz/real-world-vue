@@ -25,7 +25,7 @@ const routes = [
     //   import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
-    path: "/event/create",
+    path: "/create",
     name: "event-create",
     component: EventCreate
   }
