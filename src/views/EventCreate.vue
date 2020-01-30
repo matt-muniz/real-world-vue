@@ -101,13 +101,10 @@ export default {
     //   };
     // },
     createFreshEvent() {
-      const user = this.$store.state.user;
+      const user = this.$store.state.user.user;
       return {
         id: Math.floor(Math.random() * 1000000),
-        user: {
-          id: user.id,
-          name: user.name
-        },
+        user: user,
         category: "",
         organizer: user.name,
         title: "",
